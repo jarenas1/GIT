@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
 }
 
 header{
@@ -47,7 +50,7 @@ header{
 
     .hero-imageaaa{
         background-image: url('/public/mejores-veterinarias-medellin.jpg');
-        height: 350px;
+        height: 450px;
         background-size: cover;
         background-position: center;
         position: relative;
@@ -71,3 +74,153 @@ header{
             font-weight: bold;
         }
     }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+
+        h2{
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .service{
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            width: 30%;
+            transition: background-color 0.3s ease-in-out;
+        }
+    }
+
+    .services-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .services {
+            background-color: #fff;                     
+            width: 160px;               
+            height: 140px;             
+            border-radius: 10px;                       
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);      
+            text-align: center;                        
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+          }
+          
+          .services:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(29, 255, 4, 0.15);
+            background-color: #4caf50; 
+          }
+    }
+
+    .second-banner{
+        margin-top: 50px;
+        background-image: url('https://puntovet.com.co/wp-content/uploads/2022/12/Punto_vet_cta-scaled.jpg');
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-attachment: fixed;
+
+        h2{
+            padding-top: 100px !important;
+            bottom: 20px;
+            left: 50%;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p{
+            bottom: 20px;
+            left: 50%;
+            text-align: center;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    /* Why choose us section */
+    .why-choose-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .why-choose-title {
+        color: #4caf50;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .why-choose-content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+    
+    .why-choose-image {
+        flex: 0 0 45%;
+        max-width: 450px;
+    }
+    
+    .why-choose-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        border: 8px solid rgba(60, 191, 199, 0.2);
+    }
+    
+    .why-choose-text {
+        flex: 0 0 55%;
+    }
+    
+    .why-choose-text p {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    /* Call to action button */
+    .cta-button {
+        display: inline-block;
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: #4caf50;
+    }
+    
+    .cta-button i {
+        margin-right: 5px;
+    }
+
