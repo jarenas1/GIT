@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+main{
+    padding-top: 30px;
+}
+
+h1{
+    text-align: center;
+}
 
 .gallery-section{
     width: 100%;
@@ -35,4 +42,7 @@ article:hover {
 
 .text-container{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
