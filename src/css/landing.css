@@ -224,3 +224,51 @@ header{
         margin-right: 5px;
     }
 
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    footer section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer h3 {
+        color: #3CBFC7;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: color 0.3s ease;
+    }
+    
+    footer a:hover {
+        color: #3CBFC7;
+    }
+    
+    footer iframe {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        border-radius: 8px;
+    }
+    
+    footer p {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 14px;
+    }
+    
