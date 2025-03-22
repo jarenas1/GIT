@@ -1,7 +1,6 @@
-// Capturar el formulario
 const form = document.getElementById("login-form");
 
-// Procesar los datos
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
     
@@ -22,9 +21,15 @@ form.addEventListener('submit', function (event) {
             let usuarioValido = usuarios.find(user =>
                  user.username === username && user.password === password);
 
+
             if (usuarioValido) {
                 document.getElementById("message").textContent = "Inicio de sesión exitoso.";
                 localStorage.setItem("usuario", username);
+
+
+                usernameInput.value = "";
+                passwordInput.value = "";
+
                 setTimeout(() => {
                     window.location.href = "../pages/pages.html"; 
                 }, 1000);
